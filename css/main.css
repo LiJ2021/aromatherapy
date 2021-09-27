@@ -1,0 +1,140 @@
+
+/*here i want all of the images that I will be using to represent the candles to automatically be smaller and adjust to fit comfortably into whatever screen size it is being viewed on */
+
+/* I also want the overall background to be one of the bedrooms set to be whichever of the bedroom images that I am using */
+/*Main Area*/
+body {
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+    /*background-image:url('/Ablington.jpg');
+    /* I want the background image only to be faded/transparent
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+  body::after {    
+      content: "";
+      background-image: url('/Ablington.jpg');
+      background-size: cover;
+      /* I want it to cover the vertical axis as well. Is there such a stretch attribute?*/
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
+      z-index: -1;
+  } /* YAAAAAY now how to stretch it to cover the entire page? and not cut off when it is larger?*/
+
+#mainheader {
+    background-color: #7fc28a;
+}
+
+/*Top Menu*/
+
+nav {
+    height: 70px;
+    width: flex; /*can I use flex in this way here?*/
+    margin: 0 0 20px;
+}
+
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+/* can I float the icon all the way left? this command dn do it
+nav>ul>li img {
+    float:left;
+}
+*/
+
+nav>ul>li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Side Menu*/
+
+.mainContent ul{
+    padding-inline-start: 2px;
+    margin-right: 1.5rem;
+}
+
+.mainContent ul>a>li{
+    background-color: #cf4522;
+    color: #fff;
+    list-style: none;
+    padding: 14px 25px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.mainContent ul>a>li:hover{
+    background-color: #B43110;
+}
+
+.mainContent ul>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mainContent{
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+
+
+.pageTitle{
+    font-size:35px;
+    color:black;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    margin: 5px 10px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.candleRow {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: .5rem;
+}
+    
+.candleRow>div{
+        flex-grow: 2;
+        padding-left: .5rem;
+}
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer>p, footer>address{
+    margin: .5rem 0;
+}

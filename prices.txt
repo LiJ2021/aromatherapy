@@ -1,6 +1,6 @@
-all candles are $9.99
+all candles are $14.99
 
 Candle of the Month
-$7.99
+$12.99
 
 rotate candle of the month based on which candle isnt selling well.
