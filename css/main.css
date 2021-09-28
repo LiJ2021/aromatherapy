@@ -9,11 +9,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
-    /*background-image:url('/Ablington.jpg');
-    /* I want the background image only to be faded/transparent
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
+    }
+
   body::after {    
       content: "";
       background-image: url('/Ablington.jpg');
@@ -27,7 +24,7 @@ body {
       left: 0px;
       opacity: 0.4;
       z-index: -1;
-  } /* YAAAAAY now how to stretch it to cover the entire page? and not cut off when it is larger?*/
+  } /* YAAAAAY now how to stretch it to cover the entire page? and not cut off when it is a larger screen is there code elsewhere preventing it from stretching?*/
 
 #mainheader {
     background-color: #7fc28a;
@@ -46,16 +43,8 @@ nav>ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
 }
-
-nav>ul>li {
-    float: left;
-}
-/* can I float the icon all the way left? this command dn do it
-nav>ul>li img {
-    float:left;
-}
-*/
 
 nav>ul>li a {
     display: block;
@@ -66,34 +55,8 @@ nav>ul>li a {
     font-weight: bold;
 }
 
-/*Side Menu*/
-
-.mainContent ul{
-    padding-inline-start: 2px;
-    margin-right: 1.5rem;
-}
-
-.mainContent ul>a>li{
-    background-color: #cf4522;
-    color: #fff;
-    list-style: none;
-    padding: 14px 25px;
-    display: block;
-    cursor: pointer;
-    margin-bottom: 2px;
-}
-
-.mainContent ul>a>li:hover{
-    background-color: #B43110;
-}
-
-.mainContent ul>a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .mainContent{
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
     display:flex;
 }
@@ -104,28 +67,25 @@ nav>ul>li a {
     color:black;
 }
 
-.box {
-    width: 200px;
-    height: 100px;
-    background-color: red;
-    margin: 5px 10px;
-}
 .main {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 65%;
 }
 .candleRow {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-    flex-wrap: wrap;
+    /*flex-basis: 100%;*/
     align-items: center;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding-right: .5rem;
 }
-    
+.candleRow>img{
+    width: 17%;
+    height: auto;
+}
 .candleRow>div{
         flex-grow: 2;
         padding-left: .5rem;
@@ -138,3 +98,9 @@ footer {
 footer>p, footer>address{
     margin: .5rem 0;
 }
+
+/* needs media queries as well 
+@media screen {
+    
+}
+*/
