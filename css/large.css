@@ -1,0 +1,15 @@
+@media only screen and (min-width: 900px) {
+
+
+
+    h1 {color: green;}
+
+    .candleRow {
+        display: flex;
+       flex-wrap: wrap;
+        margin-bottom: 10px;
+        
+           }
+/* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 900px */
+}
+/* end of media query */

@@ -2,10 +2,16 @@
 /*here i want all of the images that I will be using to represent the candles to automatically be smaller and adjust to fit comfortably into whatever screen size it is being viewed on */
 
 /* I also want the overall background to be one of the bedrooms set to be whichever of the bedroom images that I am using */
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Makes Webkit (-webkit) and Microsoft (-ms) browsers adjust the font size of ALL screens to 100% all of the time - corrects the issue of text size adjustments. It is listed in small screens css because putting it in either the large or medium css would make it only apply to that minimum pixel size. Here it applies to all pages created that reference small.css in the html META tags area */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* border-box above means padding is added to the inside and margin is added to the outside, and the asterisk (*) means that this rule is applied to every border box on the page */
+
 /*Main Area*/
 body {
     margin-top: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
@@ -26,7 +32,7 @@ body {
       z-index: -1;
   } /* YAAAAAY now how to stretch it to cover the entire page? and not cut off when it is a larger screen is there code elsewhere preventing it from stretching?*/
 
-#mainheader {
+#mainheader { 
     background-color: #7fc28a;
 }
 
@@ -53,6 +59,7 @@ nav>ul>li a {
     padding: 16px;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .mainContent{
@@ -99,8 +106,10 @@ footer>p, footer>address{
     margin: .5rem 0;
 }
 
-/* needs media queries as well 
-@media screen {
-    
+@media only screen and (min-width: 481px) {
+    @import "medium";
 }
-*/
+
+@media only screen and (min-width: 900px) {
+    @import "large";
+} 
