@@ -15,13 +15,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #e6e4d9;
+    content: "";
+      background-image: url('/Ablingtonltgrn\ \(2\).jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      
     }
 
-  body::after {    
+ /* body::after {    
       content: "";
       background-image: url('/Ablington.jpg');
       background-size: cover;
-      /* I want it to cover the vertical axis as well. Is there such a stretch attribute?*/
+      /* I want it to cover the vertical axis as well. Is there such a stretch attribute?
       background-repeat: no-repeat;
       position: absolute;
       top: 0px;
