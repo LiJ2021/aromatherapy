@@ -124,12 +124,15 @@ a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    background-color: #7fc28a;
+    color:black;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
 }
-footer>p, footer>address{
-    margin: .5rem 0;
+footer>ul {
+    list-style-type: none;
 }
-
 @media only screen and (min-width: 700px) {
     @import "medium";
 }
