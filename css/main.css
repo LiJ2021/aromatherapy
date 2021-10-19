@@ -78,6 +78,7 @@ a:hover {
     width: 100%;
     margin-left: 20px;
     padding-right: 20px;
+    line-height: 2;
 }
 .candleRow {
     display:flex;
@@ -107,6 +108,18 @@ a:hover {
         padding-left: .5rem;
         
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+ /*how to line up input boxes so that they are justified, lining up evenly on the right?*/
+}
+.submitBtn {
+    display: flex;
+    max-width: 150px;
+    /*how to center the text in the button ..included space in the defined value*/
+
+}
 /*Footer*/
 footer {
     display: flex;
@@ -117,10 +130,10 @@ footer>p, footer>address{
     margin: .5rem 0;
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 700px) {
     @import "medium";
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
     @import "large";
 } 
