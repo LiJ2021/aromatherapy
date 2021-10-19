@@ -131,8 +131,23 @@ footer {
     align-items: center;
 }
 footer>ul {
-    list-style-type: none;
+    display: flex;
+    margin-bottom: 25px;
+    list-style-type: none;}
+footer>ul>li {
+    margin: 0 8px;
 }
+footer>ul>li:first-child {
+    margin-left: 0;
+}
+
+footer>ul>li:last-child {
+    margin-right: 0;
+}
+footer>ul>li>a {
+    color:black;
+}
+
 @media only screen and (min-width: 700px) {
     @import "medium";
 }
