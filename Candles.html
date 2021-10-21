@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
         rel="stylesheet">
         <link rel="icon" type="image/png" href="candle-burning-flame-pngrepo-com.png">
+        <script src="https://kit.fontawesome.com/55f4156004.js" crossorigin="anonymous"></script>
     <link href="/css/normalize.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" media="screen" />
     <link href="/css/medium.css" rel="stylesheet" />
@@ -39,23 +40,13 @@
                 <header>
                     <h1 class="pageTitle"> Aromatherapy By Li </h1>
                 </header>
-                <figure>
-                    <!--havent found an image for the picture below, may not want one at all
-                    <img src="dimitry-anikin-mt scene.jpg" width="800" alt="Soothing Nature Scene" />-->
-                    <figcaption>Bring the serenity and soothing ambiance of nature into your home</figcaption>
-                </figure>
+                <p>Bringing the serenity and soothing ambiance of nature into your home</p>
 
                 <h1>Media Query Test</h1>
                 
-                <h2>Lorem Ipsum</h2>
-                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
-                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
-                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
-                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
-                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
-                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
-                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
-                    cual incluye versiones de Lorem Ipsum.</p>
+                <h2>Why Candles?</h2>
+                <p>Scented candles have been around for centuries, with the earliest documented use of candles attributed to the Ancient Egyptians. They made torches and candles by soaking reeds in animal fat.  Through their experiments, combining spices and extracts, among other aromatic items, they were able to create some of the first-known candles.  Today, scented candles are among the most common and most sought-after home fragrance items. Candles have become a signature self-care staple used by many people all across the world. </p>
+                <p> We invite you to explore our candle selection and take a journey though wooded glens, fields of lavender, and oceanside vistas, all from the comfort of your own home.</p>
             </article>
 
         </main>
@@ -63,17 +54,31 @@
     </div>
     
     <footer>
-        <p><small>&copy; Aromatherapy by Li - All rights reserved</small></p>
+        <p><small>&copy;<script>document.write(new Date().getFullYear())</script> Aromatherapy by Li - All rights reserved</small></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Media: </p>
         <ul>
-            <li><a href="#" target="_blank">email</a></li>
-            <li><a href="#" target="_blank">twitter</a></li>
-            <li><a href="#" target="_blank">facebook</a></li>
-            <li><a href="#" target="_blank">github</a></li>
+        <li><a href="#" target="_blank" ><i class="fab fa-github-square" ></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
         </ul>
       
     </footer>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {e.preventDefault();
 
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
 </body>
 
 </html>

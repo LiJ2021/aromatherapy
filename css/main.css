@@ -18,7 +18,6 @@ body {
       background-size:cover;
       /* how do i get it to cover the whole background regardless of device size?*/
       background-repeat: no-repeat;
-      
     }
 
  
@@ -30,7 +29,7 @@ body {
 
 nav {
     height: 70px;
-    width: auto; /*can I use flex in this way here?*/
+    width: 100%; 
     margin: 0 0 20px;
 }
 
@@ -76,6 +75,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
     margin-left: 20px;
     padding-right: 20px;
     line-height: 2;
@@ -129,11 +129,13 @@ footer {
     padding: 20px 0;
     text-align: center;
     align-items: center;
-}
+ }
 footer>ul {
     display: flex;
     margin-bottom: 25px;
-    list-style-type: none;}
+    list-style-type: none;
+    font-size: 34px;
+}
 footer>ul>li {
     margin: 0 8px;
 }
