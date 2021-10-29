@@ -30,12 +30,18 @@
             </ul>
         </nav>
     </header>
+<main>
     <h1> Thank You!</h1>
-    <p> use info from contact info input here: <br>
-         FIRSTNAME LASTNAME, thank you for contacting us!<br>
-         Your question or comment is under review. <br>
+    <!--use info from contact info input here: -->
+    <!--want to call the input for the id=firstName  and eMail here in the corresponding area...like a showMessage-->
+    <p> 
+         FIRSTNAME, thank you for contacting us!<br>
+         Your question or comment is under review.</p>
+    <p>
          Expect a response from us at the email address you provided: EMAILADDRESS. <br> 
          Please allow at least 24 - 48 hours for an answer to your question or comment. </p>
+</main>
+
     <footer>
         <p><small>&copy;<script>document.write(new Date().getFullYear())</script> Aromatherapy by Li - All rights reserved</small></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Media: </p>
@@ -47,21 +53,7 @@
         </ul>
       
     </footer>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        $('a[href^="#"]').on('click',function (e) {e.preventDefault();
-    
-        var target = this.hash,
-        $target = $(target);
-    
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-    });
-    </script>
+    <script src="./candles_socialmedia.js"></script>
         </body>
     
         </html>

@@ -1,9 +1,17 @@
-
 /*here i want all of the images that I will be using to represent the candles to automatically be smaller and adjust to fit comfortably into whatever screen size it is being viewed on */
 
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 /* Makes Webkit (-webkit) and Microsoft (-ms) browsers adjust the font size of ALL screens to 100% all of the time - corrects the issue of text size adjustments. It is listed in small screens css because putting it in either the large or medium css would make it only apply to that minimum pixel size. Here it applies to all pages created that reference small.css in the html META tags area */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /* border-box above means padding is added to the inside and margin is added to the outside, and the asterisk (*) means that this rule is applied to every border box on the page */
 
 /*Main Area*/
@@ -14,14 +22,14 @@ body {
     margin-right: auto;
     background-color: #e6e4d9;
     content: "";
-      background-image: url('/Ablingtonltgrn\ \(2\).jpg');
-      background-size:cover;
-      /* how do i get it to cover the whole background regardless of device size?*/
-      background-repeat: no-repeat;
-    }
+    background-image: url('/Ablingtonltgrn\ \(2\).jpg');
+    background-size: cover;
+    /* how do i get it to cover the whole background regardless of device size?*/
+    background-repeat: no-repeat;
+}
 
- 
-#mainheader { 
+
+#mainheader {
     background-color: #7fc28a;
 }
 
@@ -29,7 +37,7 @@ body {
 
 nav {
     height: 70px;
-    width: 100%; 
+    width: 100%;
     margin: 0 0 20px;
 }
 
@@ -50,95 +58,112 @@ nav>ul>li a {
     font-weight: bold;
     font-size: larger;
 }
+
 a:hover {
-    color:#fff;
+    color: #fff;
 }
 
-.mainContent{
+.mainContent {
     margin-left: 20px;
     margin-right: 20px;
-    display:flex;
-}/*for home page */
-
-.main_details{
     display: flex;
-    flex-direction: column;
-    width: 350px;
-    
-}
-.pageTitle{
-    font-size:35px;
-    color:black;
-}
+}/*code for home/main page */
 
 .main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+
     margin-left: 20px;
     padding-right: 20px;
     line-height: 2;
+}/*code for home/main page */
+
+.main_details {
+    /* display: flex;*/
+    /* flex-direction: column; */ 
+    width: 300px;
+}/*code for candle_details page */
+
+.pageTitle {
+    font-size: 35px;
+    color: black;
 }
-.candleRow {
-    display:flex;
+
+.candleContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.candleBox {
+    /* display:flex; */
     /*how do I make the box containing the image and words smaller?*/
     flex-direction: column;
     margin-bottom: 10px;
     margin-left: 20px;
-    /*flex-basis: 100%;*/
+    /* flex-basis: 100%; */
     align-items: center;
     background-color: #fff;
     border-radius: 10%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     padding-right: .5rem;
+    text-align: center;
+    /* replaces .candleBox>div>h3, .candleBox>div>p {text-align:  center; }*/
 }
-.candleRow>div>h3{
-    text-align:  center;
-}
-.candleRow>img{
+
+.candleBox>img {
     width: 50%;
     height: auto;
     border-radius: 10%;
     margin-left: 20px;
 }
 
-.candleRow>div{
+/*  .candleBox>div{
         flex-grow: 1;
         padding-left: .5rem;
-        
-}
-.form{
+        }                           */
+.form {
     display: flex;
     flex-direction: column;
     max-width: 800px;
- /*how to line up input boxes so that they are justified, lining up evenly on the right?*/
+    /*how to line up input boxes so that they are justified, lining up evenly on the right?*/
 }
-.submitBtn {
-    display: flex;
-    max-width: 150px;
-    /*how to center the text in the button ..included space in the defined value*/
 
+.submitBtn {
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 150px;
+    border-radius: 5px;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
+
 /*Footer*/
+
 footer {
     display: flex;
     flex-direction: column;
     background-color: #7fc28a;
-    color:black;
+    color: black;
     padding: 20px 0;
     text-align: center;
     align-items: center;
- }
+}
+
 footer>ul {
     display: flex;
     margin-bottom: 25px;
     list-style-type: none;
     font-size: 34px;
 }
+
 footer>ul>li {
     margin: 0 8px;
 }
+
 footer>ul>li:first-child {
     margin-left: 0;
 }
@@ -146,8 +171,9 @@ footer>ul>li:first-child {
 footer>ul>li:last-child {
     margin-right: 0;
 }
+
 footer>ul>li>a {
-    color:black;
+    color: black;
 }
 
 @media only screen and (min-width: 700px) {
@@ -156,4 +182,4 @@ footer>ul>li>a {
 
 @media only screen and (min-width: 1000px) {
     @import "large";
-} 
+}

@@ -4,14 +4,33 @@
 
     h1 {color: green;}
 
-    .candleRow{
+    .candleBox{
     
         display: flex;
-        flex-wrap: wrap;
         margin-bottom: 10px;
         
-           }
-/* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, and to 3 column when screen size is 0ver 1000px */
+        }
+        .candleContainer {
+            flex-direction: row;
+            
+            /* flex-wrap: wrap; */
+             }       
+
+        /*.main_details {
+            max-width: 300px;
+            flex-flow: row wrap;
+         --?? flex-wrap: wrap; ??--
+        } */
+/* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, and to 3 column when screen size is 0ver 1000px
+.candleBox {
+    max-width: 250px;
+}
+.main_details {
+    max-width: 300px;
+    flex-flow: row wrap;
+    --?? flex-wrap: wrap; ??--
+} 
+*/
 
 
 
