@@ -22,7 +22,7 @@ body {
     margin-right: auto;
     background-color: #e6e4d9;
     content: "";
-    background-image: url('../Ablingtonltgrn2.jpg');
+    background: url('../Ablingtonltgrn2.jpg');
     background-size: cover;
     /* how do i get it to cover the whole background regardless of device size?*/
     background-repeat: no-repeat;

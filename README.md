@@ -7,6 +7,6 @@ The webpage should show a navigation menu and layout that expands and collapses 
 
 The webpage will use a hamburger menu when the screen is mobile device sized.
 
-The webpage will use Flexbox to organize content areas based on different viewing devices.
+The webpage will use Flex to organize content areas based on different viewing devices, and media queries to implement the different viewing options, specifically for the candle_details webpage - going from a column on a mobile device, to two rows on a Ipad, to three rows on a larger screen. 
 
 Javascript but I am not sure how just yet.
