@@ -4,13 +4,17 @@
 
     h1 {color: green;}
 
-    .candleBox{
+    /* .candleBox{
     
         display: flex;
         margin-bottom: 10px;
-        
-        }
-        .candleContainer {
+        } */
+
+        .candleContainer { 
+            flex-direction: none;
+            } /* I am trying to reset the .candleContainer so that it doesnt inherit row and allows the class .candleContainer4 to be activated, displaying 4 rows of candles */
+
+        .candleContainer4 {
             flex-direction: row;
             
             /* flex-wrap: wrap; */
@@ -22,7 +26,7 @@
          --?? flex-wrap: wrap; ??--
         } */
 /* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, 
-and to 3 column when screen size is over 1000px
+and to 4 column when screen size is over 1000px
 .candleBox {
     max-width: 250px;
 }

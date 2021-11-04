@@ -85,10 +85,10 @@ a:hover {
     width: 300px;
 }/*code for candle_details page */
 
-.pageTitle {
+/* .pageTitle {
     font-size: 35px;
     color: black;
-}
+} */
 
 .candleContainer {
     display: flex;
@@ -139,6 +139,7 @@ a:hover {
     border-radius: 5px;
     line-height: 1.4;
     margin-bottom: 15px;
+    font-size: 85%;
 }
 
 /*Footer*/
