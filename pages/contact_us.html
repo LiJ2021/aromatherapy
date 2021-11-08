@@ -38,7 +38,7 @@
         <h2>Contact Us</h2>
 		<p>For customer support help or product questions, please send us a message here or through the social media platforms listed below.</p>
          
-<form class="form" method="GET" action="thanks.html">
+<form class="form" method="GET" name="myForm" action="thanks.html" onsubmit="return validateForm()">
     <!--created 3 ids in this section to retrieve later in order to use in the placeholders on the thanks page - firstName,lastName,eMail-->
 	<label> First Name <span>(required)</span> <input id="firstName" type="text" name="fname" required><br></label>
 
@@ -54,6 +54,8 @@
     
 	<input type="submit" value="Submit My Question" class="submitBtn">
   </form>    
+  <script src="../javascript/main.js">
+</script>
   <!-- <script>
     function myFunction() {
       document.getElementById("firstName").submit();
