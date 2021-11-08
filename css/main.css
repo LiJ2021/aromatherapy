@@ -77,11 +77,9 @@ a:hover {
     margin-left: 20px;
     padding-right: 20px;
     line-height: 2;
-}/*code for home/main page */
+}/*code for home/main page, contact page */
 
 .main_details {
-    /* display: flex;*/
-    /* flex-direction: column; */ 
     width: 300px;
 }/*code for candle_details page */
 
@@ -96,8 +94,6 @@ a:hover {
 }
 
 .candleBox {
-    /* display:flex; */
-    /*how do I make the box containing the image and words smaller?*/
     flex-direction: column;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -123,10 +119,29 @@ a:hover {
         padding-left: .5rem;
         }                           */
 .form {
-    display: flex;
-    flex-direction: column;
-    max-width: 800px;
-    /*how to line up input boxes so that they are justified, lining up evenly on the right?*/
+        max-width: 800px;
+}
+.form>label {
+    display: block;
+    padding: 2px 0;
+}
+
+.form>label>span {
+    font-size: 12px;
+    color: #ff0000;
+    
+}
+.form>label>input,textarea{
+    display: block;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #f6f6f6;  
+}
+.form>label>input:focus,textarea:focus {
+    background-color: #ddd;
+}
+.form>label>textarea {
+    min-height: 150px;
 }
 
 .submitBtn {
