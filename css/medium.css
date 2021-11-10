@@ -10,20 +10,20 @@ h1 {color: yellow;}
 
 .candleContainer {
   flex-direction: row;
-  /* max-width: 650px; <--changing the size of the container does not make it wrap*/
-  /* display: flex;
-  flex-wrap: wrap; 
-  margin-left: auto;
-  margin-right: auto;
-  */
-   }       
- 
+  }   
+
+   nav>div>button {display: none;}
+   nav>div>ul {display: flex;}
+   nav>div>ul.open {
+    display:flex;}
+   /* nav>div>li {width: 25%; float: left;} */
+   /* *************************** */
+
+   /* 
    .main_details {
-    /*  width: 75%;
+     width: 75%;
     flex-wrap: wrap; 
-    /*something needs to happen here or in the .candleContainer to make the content wrap - flex-wrap isnt working. I know its my code but idk what. 
-    ??flex-flow: row wrap;
-  */}
+      */
   
 /* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, and to 4 column when screen size is 0ver 1000px */
 

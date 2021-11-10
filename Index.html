@@ -7,11 +7,11 @@
     <!--do not lie meta tag-->
     <meta name="author" content="Aromatherapy By Li">
     <meta name="description" content="Store front for Li&#39;s Aromatherapy Shop">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="candle-burning-flame-pngrepo-com.png">
-        <script src="https://kit.fontawesome.com/55f4156004.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="candle-burning-flame-pngrepo-com.png">
+    <script src="https://kit.fontawesome.com/55f4156004.js" crossorigin="anonymous"></script>
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" media="screen" />
     <link href="css/medium.css" rel="stylesheet" />
@@ -23,46 +23,59 @@
 
 <body>
     <header id="mainheader">
-        <nav>
-            <ul>
-                <li><img src="candle-burning-flame-pngrepo-com.png" height="62" /></li>
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="pages/candle_details.html">Our Selection</a></li>
-                <li><a href="pages/contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+        <img src="candle-burning-flame-pngrepo-com.png" height="92" alt="Li's Candle Logo" />
+        <h1 class="pageTitle"> Aromatherapy <br> By Li</h1>
     </header>
+
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776; </button>
+        <ul id="primaryNav">
+            <li class="active"><a href="Index.html">Home</a></li>
+            <li><a href="pages/candle_details.html">Our Selection</a></li>
+            <li><a href="pages/contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    </nav>
 
     <div class="mainContent">
 
         <main class="main">
             <article>
-                <header>
-                    <h1 class="pageTitle"> Aromatherapy By Li </h1>
-                </header>
-                <p>Bringing the serenity and soothing ambiance of nature into your home</p>
-             
+
+               
+
                 <h2>Why Candles?</h2>
-                <p>Scented candles have been around for centuries, with the earliest documented use of candles attributed to the Ancient Egyptians. They made torches and candles by soaking reeds in animal fat.  Through their experiments, combining spices and extracts, among other aromatic items, they were able to create some of the first-known candles.  Today, scented candles are among the most common and most sought-after home fragrance items. Candles have become a signature self-care staple used by many people all across the world. </p>
-                <p> We invite you to explore our candle selection and take a journey though wooded glens, fields of lavender, and oceanside vistas, all from the comfort of your own home.</p>
+                <br>
+                <p>Scented candles have been around for centuries, with the earliest documented use of candles
+                    attributed to the Ancient Egyptians. They made torches and candles by soaking reeds in animal fat.
+                    Through their experiments, combining spices and extracts, among other aromatic items, they were able
+                    to create some of the first-known candles. Today, scented candles are among the most common and most
+                    sought-after home fragrance items. Candles have become a signature self-care staple used by many
+                    people all across the world. </p>
+                <p> We invite you to explore our candle selection and take a journey though wooded glens, fields of
+                    lavender, and oceanside vistas, all from the comfort of your own home.</p>
             </article>
 
         </main>
 
     </div>
-    
+
     <footer>
-        <p><small>&copy;<script>document.write(new Date().getFullYear())</script> Aromatherapy by Li - All rights reserved</small></p>
+        <p><small>&copy;<script>
+                    document.write(new Date().getFullYear())
+                </script> Aromatherapy by Li - All rights reserved</small></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Media: </p>
         <ul>
-        <li><a href="#" target="_blank" ><i class="fab fa-github-square" ></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a href="#" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
         </ul>
-      
+
     </footer>
     <script src="./candles_socialmedia.js"></script>
+    <script src="javascript/menuToggle.js"></script>
 </body>
 
 </html>

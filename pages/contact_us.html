@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--do not lie meta tag-->
     <meta name="author" content="Aromatherapy By Li">
@@ -17,64 +17,76 @@
     <link href="../css/medium.css" rel="stylesheet" />
     <link href="../css/large.css" rel="stylesheet" />
     <link href="../css/print.css" rel="stylesheet" media="print" />
-       
+
     <title>Aromatherapy By Li</title>
 </head>
 
 <body>
-	<header id="mainheader">
-        <nav>
-            <ul>
-                <li><img src="../candle-burning-flame-pngrepo-com.png" height="62" /></li>
-                <li><a href="../Index.html">Home</a></li>
-				<li><a href="candle_details.html">Our Selection</a></li>
-               	<li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header id="mainheader">
+        <img src="../candle-burning-flame-pngrepo-com.png" height="92" alt="Li's Candle Logo" />
+        <h1 class="pageTitle"> Aromatherapy <br> By Li</h1>
     </header>
+
+    <nav>
+        <div>
+            <button id="hamburgerBtn">&#9776; </button>
+            <ul id="primaryNav">
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="candle_details.html">Our Selection</a></li>
+                <li class="active"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main class="main">
-        <h1 class="pageTitle"> Aromatherapy By Li </h1>
-        
+
         <h2>Contact Us</h2>
-		<p>For customer support help or product questions, please send us a message here or through the social media platforms listed below.</p>
-         
-<form class="form" method="GET" name="myForm" action="thanks.html" onsubmit="return validateForm()">
-    <!--created 3 ids in this section to retrieve later in order to use in the placeholders on the thanks page - firstName,lastName,eMail-->
-	<label> First Name <span>(required)</span> <input id="firstName" type="text" name="fname" required><br></label>
+        <p>For customer support help or product questions, please send us a message here or through the social media
+            platforms listed below.</p>
 
-	<label> Last Name <span>(required)</span> <input id="lastName" type="text" name="lname" required><br></label>
+        <form class="form" method="GET" name="myForm" action="thanks.html" onsubmit="return validateForm()">
+            <!--created ids in this section to retrieve later in order to use in the placeholders on the thanks page - firstName,eMail-->
+            <label> First Name <span>(required)</span> <input id="firstName" type="text" name="fname"
+                    required><br></label>
 
-	<label> Email <span>(required)</span> <input id="eMail" type="email" name="email" placeholder="someone@email.com" required><br></label>
+            <label> Last Name <span>(required)</span> <input id="lastName" type="text" name="lname"
+                    required><br></label>
 
-	<label>
-		Phone <input type="tel" name="phone"><br>
-	</label>
+            <label> Email <span>(required)</span> <input id="eMail" type="email" name="email"
+                    placeholder="someone@email.com" required><br></label>
 
-	<label>Your Question<textarea></textarea><br></label>
-    
-	<input type="submit" value="Submit My Question" class="submitBtn">
-  </form>    
-  <script src="../javascript/main.js">
-</script>
-  <!-- <script>
+            <label>
+                Phone <input type="tel" name="phone"><br>
+            </label>
+
+            <label>Your Question<textarea></textarea><br></label>
+
+            <input type="submit" value="Submit My Question" class="submitBtn">
+        </form>
+        <script src="../javascript/main.js">
+        </script>
+        <!-- <script>
     function myFunction() {
       document.getElementById("firstName").submit();
     }
     </script> -->
-</main>
+    </main>
 
-<footer>
-    <p><small>&copy;<script>document.write(new Date().getFullYear())</script> Aromatherapy by Li - All rights reserved</small></p>
-    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Media: </p>
-    <ul>
-    <li><a href="#" target="_blank" ><i class="fab fa-github-square" ></i></a></li>
-    <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-    <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-    <li><a href="#" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
-    </ul>
-  
-</footer>
-<script src="./candles_socialmedia.js"></script>
-    </body>
+    <footer>
+        <p><small>&copy;<script>
+                    document.write(new Date().getFullYear())
+                </script> Aromatherapy by Li - All rights reserved</small></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social Media: </p>
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
+        </ul>
 
-    </html>
+    </footer>
+    <script src="../javascript/candles_socialmedia.js"></script>
+    <script src="../javascript/menuToggle.js"></script>
+</body>
+
+</html>
