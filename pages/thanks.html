@@ -37,6 +37,19 @@
         </ul>
     </div>
     </nav>
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams (queryString);
+        const fname = urlParams.get('fname')
+        console.log(fname);
+        const lname = urlParams.get('lname')
+        console.log(lname);
+        const email = urlParams.get('email')
+        console.log(email);
+    
+        </script>
+        <!-- https://www.sitepoint.com/get-url-parameters-with-javascript/ -->
 <main>
            
         <h2>Thank You! </h2>
