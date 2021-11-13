@@ -114,6 +114,9 @@ nav>div>ul {
     width: 300px;
 }/*code for candle_details page */
 
+.video {
+        text-align: center;
+}
 /* .pageTitle {
     font-size: 35px;
     color: black;
