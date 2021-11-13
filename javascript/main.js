@@ -1,5 +1,5 @@
 function validateForm() {
-    alert("its working");
+    alert("Thank You!");
     var status = true;
     var x;
 
