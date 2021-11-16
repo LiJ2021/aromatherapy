@@ -16,6 +16,14 @@ h1 {color: yellow;}
    nav>div>ul {display: flex;}
    nav>div>ul.open {
     display:flex;}
+
+    .main {
+      margin-left: 30px;
+    }
+   
+    .main_details{
+      margin-left: 30px;
+    }
    /* nav>div>li {width: 25%; float: left;} */
    /* *************************** */
 

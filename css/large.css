@@ -1,27 +1,40 @@
 @media only screen and (min-width: 1000px) {
 
-    h1 {color: green;}
+    h1 {
+        color: green;
+    }
 
     /* .candleBox{
     
         display: flex;
         margin-bottom: 10px;
         } */
-        nav>div>ul.open {
-            display:flex;}
+    nav>div>ul.open {
+        display: flex;
+    }
 
-        .candleContainer { 
-            flex-wrap: nowrap;
-            } /* I am trying to reset the .candleContainer so that it doesnt inherit row and allows the class .candleContainer4 to be activated, displaying 4 rows of candles */
+    .candleContainer {
+        flex-wrap: nowrap;
+    }
 
-        .candleContainer4 {
-            display: flex;
-            flex-direction: row;
-                        }       
+    /* I am trying to reset the .candleContainer so that it doesnt inherit row and allows the class .candleContainer4 to be activated, displaying more rows of candles */
 
-/* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, and to rows of 4 items when screen size is over 1000px
+    .candleContainer4 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        margin-left: 55px;
+    }
+    .main_details{
+        margin-left: 55px;
+    }
+    /* I want my rows of candles on the candle_details page to go from single column to double column when the screen size goes to 768px, and to rows of 4 items when screen size is over 1000px
 */
 
 
 
-}/* end of media query */
+}
+
+/* end of media query */
